@@ -1,7 +1,10 @@
+From Llama, on their evaluation, we have the following information:
 The pre-trained models are evaluated in the standard way by calualting the likelihood of each choice character. For the instruct-aligned models, we use a dialogue prompt (user/assistant) for the shots and ask the model to generate the best choice character as answer.
 
+The MMLU dataset is split into 4 categories, each with several subcategories, each with several subtopics, for a total of $57$ subtopics.
+
 Macro average: average across categories
-Micro average: average across questions
+Micro average: average across topics
 
 We check from response that either: 
 first letter is A/B/C/D, or string contains (A.) or equivalent
